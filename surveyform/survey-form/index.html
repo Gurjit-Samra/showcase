@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey</title>
+</head>
+<body>
+
+    <h1 id="title">Farm Fresh Produce Survey Form</h1>
+    <p id="description">Got 2 minutes? Tell us about your recent experience with Farm Fresh Produce<br> for a chance to <strong>WIN FREE GROCERIES FOR A YEAR!</strong></p>
+    <form id="survey-form" action="">
+
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+        
+        <label for="number" id="number-label">Rate Us</label>
+        <input type="number" id="number" min="1" max="5" placeholder="1-5">
+
+        <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+        <select id="dropdown">
+            <option value="select" disabled selected>Select an option</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Employed Full-Time</option>
+            <option value="full-time-learner">Self-Employed</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="radio-buttons" id="radio-buttons">Would you recommend Farm Fresh Produce to a friend?</label>
+        <div class="options">
+            <div>
+                <input type="radio" name="recommend" value="definitely" id="definitely" checked>
+                <label for="definitely">Definitely</label>
+            </div>
+            <div>
+                <input type="radio" name="recommend" value="maybe" id="maybe">
+                <label for="maybe">Maybe</label>
+            </div>
+            <div>
+                <input type="radio" name="recommend" value="not-sure" id="not-sure">
+                <label for="not-sure">Not sure</label>
+            </div>
+        </div>
+
+        <label for="checkboxes" id="checkboxes">What do you like most about Farm Fresh Produce?</label>
+        <div class="options">
+            <div>
+                <input type="checkbox" name="like" value="fresh-produce" id="fresh-produce">
+                <label for="fresh-produce">Fresh Produce</label>
+            </div>
+            <div>
+                <input type="checkbox" name="like" value="savings" id="savings">
+                <label for="savings">Savings</label>
+            </div>
+            <div>
+                <input type="checkbox" name="like" value="customer-service" id="customer-service">
+                <label for="customer-service">Customer Service</label>
+            </div>
+            <div>
+                <input type="checkbox" name="like" value="delivery-service" id="delivery-service">
+                <label for="delivery-service">Delivery Service</label>
+            </div>
+            <div>
+                <input type="checkbox" name="like" value="community-fund" id="community-fund">
+                <label for="community-fund">Community Fund</label>
+            </div>
+    
+        </div>
+
+        <label for="comments" id="comments-label">Any comments or suggestions?</label>
+        <textarea id="comments" placeholder="Enter your comments here..."></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>
